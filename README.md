@@ -44,6 +44,11 @@ npm i typescript nodemon ts-node @types/node
   }
 ```
 
+**folder structure**
+
+![image](https://user-images.githubusercontent.com/14078661/67684075-44a81e80-f971-11e9-9740-7963fcd3ca59.png)
+
+
 # Express
 
 ```
