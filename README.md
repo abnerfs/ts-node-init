@@ -17,7 +17,7 @@ npm i typescript nodemon ts-node @types/node
 ./node_modules/.bin/tsc --init
 ```
 
-
+**tsconfig.json**
 ``` JSON
 {
   "compilerOptions": {
@@ -34,6 +34,14 @@ npm i typescript nodemon ts-node @types/node
   "include": ["src/**/*"],
   "exclude": ["node_modules", "**/*.test.ts"]
 }
+```
+
+**package.json**
+``` JSON
+"scripts": {
+    "prod": "tsc",
+    "dev": "nodemon --watch \"src//\" --exec \"ts-node src/entry.ts\" -e ts"
+  }
 ```
 
 # Express
