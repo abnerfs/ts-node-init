@@ -17,7 +17,7 @@ npm i typescript nodemon ts-node @types/node
 ./node_modules/.bin/tsc --init
 ```
 
-**tsconfig.json**
+# tsconfig.json
 ``` JSON
 {
   "compilerOptions": {
@@ -36,7 +36,7 @@ npm i typescript nodemon ts-node @types/node
 }
 ```
 
-**package.json**
+# package.json
 ``` JSON
 "scripts": {
     "prod": "tsc",
@@ -44,7 +44,7 @@ npm i typescript nodemon ts-node @types/node
   }
 ```
 
-**folder structure**
+# folder structure
 
 ![image](https://user-images.githubusercontent.com/14078661/67684075-44a81e80-f971-11e9-9740-7963fcd3ca59.png)
 
@@ -57,4 +57,18 @@ yarn add express body-parser morgan dotenv @types/express @types/body-parser @ty
 OR
 ```
 npm i express body-parser morgan dotenv @types/express @types/body-parser @types/dotenv @types/morgan 
+```
+
+# Run
+```
+yarn dev
+OR
+npm run dev
+```
+
+# Deploy
+```
+yarn prod
+OR
+npm run prod
 ```
