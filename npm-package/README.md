@@ -5,7 +5,7 @@ yarn add typescript nodemon ts-node @types/node --dev
 ```
 OR
 ```
-npm i typescript nodemon ts-node @types/node --dev
+npm i typescript nodemon ts-node @types/node --save-dev
 ```
 **tsconfig.json**
 ``` JSON
