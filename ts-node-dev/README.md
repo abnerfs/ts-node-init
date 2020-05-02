@@ -1,11 +1,11 @@
-# TypeScript NPM Package
+# TypeScript With ts-node-dev
 
 ```
-yarn add typescript ts-node ts-node-dev @types/node --dev
+yarn add typescript ts-node ts-node-dev @types/node
 ```
 OR
 ```
-npm i typescript ts-node ts-node-dev @types/node --save-dev
+npm i typescript ts-node ts-node-dev @types/node
 ```
 **tsconfig.json**
 ``` JSON
