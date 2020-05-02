@@ -28,10 +28,8 @@ npm i typescript ts-node ts-node-dev @types/node
 
 **package.json**
 ``` JSON
-"main" : "dist/index.js",
-"types" : "dist/index.d.ts",
 "scripts": {
-    "build": "tsc --declaration",
+    "build": "tsc",
     "dev": "ts-node-dev --respawn --transpileOnly src/index.ts"
   }
 ```
