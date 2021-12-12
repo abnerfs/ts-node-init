@@ -5,11 +5,11 @@ Sample commands to init a NodeJS TypeScript project
 ## Dependencies
 
 ```
-yarn add typescript ts-node ts-node-dev @types/node
+yarn add typescript ts-node ts-node-dev @types/node --dev
 ```
 OR
 ```
-npm i typescript ts-node ts-node-dev @types/node
+npm i typescript ts-node ts-node-dev @types/node --save-dev
 ```
 
 ## tsconfig.json
@@ -19,18 +19,19 @@ Create **tsconfig.json** in the root directory that will contain your typescript
 ``` JSON
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es2017", 
+    "experimentalDecorators": true, 
+    "emitDecoratorMetadata": true, 
     "module": "commonjs",
-    "outDir": "./dist",
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "esModuleInterop": true
-  },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "**/*.test.ts"]
+    "rootDir": "./src", 
+    "outDir": "./dist", 
+    "removeComments": true, 
+    "esModuleInterop": true, 
+    "forceConsistentCasingInFileNames": true, 
+    "strict": true, 
+    "resolveJsonModule": true,
+    "skipLibCheck": true 
+  }
 }
 ```
 
@@ -49,7 +50,7 @@ Add **dev** and **build** scripts to your **package.json** file,
 ``` JSON
 "scripts": {
     "build": "tsc",
-    "dev": "ts-node-dev --respawn --transpile-only src/index.ts"
+    "dev": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/index.ts"
   }
 ```
 
